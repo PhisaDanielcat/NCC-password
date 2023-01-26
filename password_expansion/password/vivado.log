@@ -1,0 +1,266 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jul  9 14:51:22 2022
+# Process ID: 4852
+# Current directory: D:/VivadoCode/chip_contest/password_expansion/password
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15408 D:\VivadoCode\chip_contest\password_expansion\password\password.xpr
+# Log file: D:/VivadoCode/chip_contest/password_expansion/password/vivado.log
+# Journal file: D:/VivadoCode/chip_contest/password_expansion/password\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/VivadoCode/chip_contest/password_expansion/password/password.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 775.270 ; gain = 172.125
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VivadoCode/chip_contest/password_expansion/password/password.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VivadoCode/chip_contest/password_expansion/password/password.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/LB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LB_func
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/S_box.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module S_box
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-3380] identifier 'FKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:176]
+WARNING: [VRFC 10-3380] identifier 'FKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:177]
+WARNING: [VRFC 10-3380] identifier 'FKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:178]
+WARNING: [VRFC 10-3380] identifier 'FKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:179]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:268]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:269]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:270]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:271]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:272]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:273]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:274]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:275]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:276]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:277]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:278]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:279]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:280]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:281]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:282]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:283]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:284]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:285]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:286]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:287]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:288]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:289]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:290]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:291]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:292]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:293]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:294]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:295]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:296]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:297]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:298]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:299]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:300]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:301]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:302]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:303]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sim_1/imports/Desktop/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoCode/chip_contest/password_expansion/password/password.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VivadoCode/chip_contest/password_expansion/password/password.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto bd557839f2e1457a943c3d2d1c42ae4d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3705] select index 32 into 'CKi' is out of bounds [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:300]
+WARNING: [VRFC 10-3705] select index 36 into 'Ki' is out of bounds [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:301]
+WARNING: [VRFC 10-3705] select index 36 into 'Ki' is out of bounds [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:302]
+WARNING: [VRFC 10-3705] select index 36 into 'Ki' is out of bounds [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:303]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.S_box
+Compiling module xil_defaultlib.LB_func
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/VivadoCode/chip_contest/password_expansion/password/password.sim/sim_1/behav/xsim/xsim.dir/top_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Jul  9 14:58:06 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/VivadoCode/chip_contest/password_expansion/password/password.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_tb_behav -key {Behavioral:sim_1:Functional:top_tb} -tclbatch {top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 832.598 ; gain = 17.484
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/VivadoCode/chip_contest/password_expansion/password/password.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Sat Jul  9 15:09:17 2022] Launched synth_1...
+Run output will be captured here: D:/VivadoCode/chip_contest/password_expansion/password/password.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-2
+INFO: [Netlist 29-17] Analyzing 646 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/constrs_1/new/time.xdc]
+Finished Parsing XDC File [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/constrs_1/new/time.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1141.453 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1276.250 ; gain = 429.098
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-2
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1961.184 ; gain = 28.508
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:3]
+INFO: [Synth 8-226] default block is never used [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:224]
+WARNING: [Synth 8-324] index 32 out of range [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:300]
+WARNING: [Synth 8-324] index 36 out of range [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:301]
+WARNING: [Synth 8-324] index 33 out of range [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:301]
+WARNING: [Synth 8-324] index 36 out of range [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:302]
+WARNING: [Synth 8-324] index 37 out of range [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:302]
+WARNING: [Synth 8-324] index 34 out of range [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:302]
+WARNING: [Synth 8-324] index 36 out of range [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:303]
+WARNING: [Synth 8-324] index 37 out of range [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:303]
+WARNING: [Synth 8-324] index 38 out of range [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:303]
+WARNING: [Synth 8-324] index 35 out of range [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:303]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:267]
+INFO: [Synth 8-6157] synthesizing module 'S_box' [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/S_box.v:3]
+INFO: [Synth 8-226] default block is never used [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/S_box.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'S_box' (1#1) [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/S_box.v:3]
+INFO: [Synth 8-6157] synthesizing module 'LB_func' [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/LB.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'LB_func' (2#1) [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/LB.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top' (3#1) [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2012.797 ; gain = 80.121
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2012.797 ; gain = 80.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2012.797 ; gain = 80.121
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/constrs_1/new/time.xdc]
+Finished Parsing XDC File [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/constrs_1/new/time.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2175.012 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2175.012 ; gain = 242.336
+12 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2175.012 ; gain = 242.336
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+close_design
+close_project
+open_project D:/VivadoCode/chip_contest/password_expansion/password/password.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+create_run synth_2 -flow {Vivado Synthesis 2018} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+Run is defaulting to srcset: sources_1
+Run is defaulting to constrset: constrs_1
+Run is defaulting to part: xc7z020clg400-2
+current_run [get_runs synth_2]
+set_property part xqzu28dr-ffrg1517-1M-m [current_project]
+launch_runs synth_2 -jobs 8
+[Sat Jul  9 15:37:11 2022] Launched synth_2...
+Run output will be captured here: D:/VivadoCode/chip_contest/password_expansion/password/password.runs/synth_2/runme.log
+open_run synth_2 -name synth_2
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xqzu28dr-ffrg1517-1M-m
+INFO: [Netlist 29-17] Analyzing 762 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xqzu28dr-ffrg1517-1M-m
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/constrs_1/new/time.xdc]
+Finished Parsing XDC File [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/constrs_1/new/time.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2348.836 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 131 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 131 instances
+
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 2659.895 ; gain = 372.953
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1M, Temperature grade: M, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary: Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 4631.035 ; gain = 1017.926
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jul  9 16:09:24 2022...

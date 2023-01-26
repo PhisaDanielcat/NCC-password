@@ -1,0 +1,699 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jul  9 17:04:58 2022
+# Process ID: 296
+# Current directory: D:/VivadoCode/chip_contest/password_expansion/password2/password2.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/VivadoCode/chip_contest/password_expansion/password2/password2.runs/synth_1/top.vds
+# Journal file: D:/VivadoCode/chip_contest/password_expansion/password2/password2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7z020clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13172 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 430.883 ; gain = 98.672
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:5]
+WARNING: [Synth 8-6014] Unused sequential element ghash_data_len_rg_reg was removed.  [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:28]
+WARNING: [Synth 8-6014] Unused sequential element B_reg was removed.  [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:33]
+WARNING: [Synth 8-6014] Unused sequential element B_reg was removed.  [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:48]
+WARNING: [Synth 8-3848] Net ghash_done in module/entity top does not have driver. [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:14]
+WARNING: [Synth 8-3848] Net ghash_busy in module/entity top does not have driver. [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'top' (1#1) [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:5]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_done
+WARNING: [Synth 8-3331] design top has unconnected port ghash_busy
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[15]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[14]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[13]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[12]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[11]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[10]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[9]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[8]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[7]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[6]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[5]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[4]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[3]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[2]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[1]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 589.355 ; gain = 257.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 589.355 ; gain = 257.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 589.355 ; gain = 257.145
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[128]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[127]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[127]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[126]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[126]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[125]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[125]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[124]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[124]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[123]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[123]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[122]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[122]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[121]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[121]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[120]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[120]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[119]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[119]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[118]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[118]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[117]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[117]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[116]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[116]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[115]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[115]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[114]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[114]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[113]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[113]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[112]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[112]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[111]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[111]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[110]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[110]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[109]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[109]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[108]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[108]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[107]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[107]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[106]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[106]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[105]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[105]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[104]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[104]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[103]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[103]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[102]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[102]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[101]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[101]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[100]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[100]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[99]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[99]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[98]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[98]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[97]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[97]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[96]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[96]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[95]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[95]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[94]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[94]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[93]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[93]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[92]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[92]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[91]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[91]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[90]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[90]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[89]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[89]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[88]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[88]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[87]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[87]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[86]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[86]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[85]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[85]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[84]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[84]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[83]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[83]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[82]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[82]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[81]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[81]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[80]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[80]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[79]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg[79]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'V_reg[78]' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:604]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 766.461 ; gain = 434.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |top__GB0      |           1|     57510|
+|2     |top__GB1      |           1|     32589|
+|3     |top__GB2      |           1|     43326|
+|4     |top__GB3      |           1|     44091|
+|5     |top__GB4      |           1|     36423|
+|6     |top__GB5      |           1|     31444|
++------+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 256   
++---Registers : 
+	              128 Bit    Registers := 3     
++---Muxes : 
+	   3 Input    128 Bit        Muxes := 253   
+	   2 Input    128 Bit        Muxes := 256   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 256   
++---Registers : 
+	              128 Bit    Registers := 3     
++---Muxes : 
+	   3 Input    128 Bit        Muxes := 253   
+	   2 Input    128 Bit        Muxes := 256   
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design top has unconnected port ghash_done
+WARNING: [Synth 8-3331] design top has unconnected port ghash_busy
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[15]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[14]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[13]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[12]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[11]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[10]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[9]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[8]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[7]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[6]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[5]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[4]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[3]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[2]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[1]
+WARNING: [Synth 8-3331] design top has unconnected port ghash_data_len[0]
+INFO: [Synth 8-3886] merging instance 'V_reg[96][0]' (LDC) to 'V_reg[97][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[95][0]' (LDC) to 'V_reg[96][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[94][0]' (LDC) to 'V_reg[95][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[93][0]' (LDC) to 'V_reg[94][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[92][0]' (LDC) to 'V_reg[93][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[91][0]' (LDC) to 'V_reg[92][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[90][0]' (LDC) to 'V_reg[91][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[89][0]' (LDC) to 'V_reg[90][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[88][0]' (LDC) to 'V_reg[89][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[87][0]' (LDC) to 'V_reg[88][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[86][0]' (LDC) to 'V_reg[87][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[85][0]' (LDC) to 'V_reg[86][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[84][0]' (LDC) to 'V_reg[85][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[83][0]' (LDC) to 'V_reg[84][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[82][0]' (LDC) to 'V_reg[83][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[81][0]' (LDC) to 'V_reg[82][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[80][0]' (LDC) to 'V_reg[81][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[79][0]' (LDC) to 'V_reg[80][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[78][0]' (LDC) to 'V_reg[79][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[17][0]' (LDC) to 'V_reg[18][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[16][0]' (LDC) to 'V_reg[17][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[15][0]' (LDC) to 'V_reg[16][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[14][0]' (LDC) to 'V_reg[15][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[13][0]' (LDC) to 'V_reg[14][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[12][0]' (LDC) to 'V_reg[13][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[11][0]' (LDC) to 'V_reg[12][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[10][0]' (LDC) to 'V_reg[11][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[9][0]' (LDC) to 'V_reg[10][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[97][0]' (LDC) to 'V_reg[96][1]'
+INFO: [Synth 8-3886] merging instance 'V_reg[97][1]' (LDC) to 'V_reg[96][2]'
+INFO: [Synth 8-3886] merging instance 'V_reg[91][1]' (LDC) to 'V_reg[90][2]'
+INFO: [Synth 8-3886] merging instance 'V_reg[90][1]' (LDC) to 'V_reg[89][2]'
+INFO: [Synth 8-3886] merging instance 'V_reg[93][1]' (LDC) to 'V_reg[92][2]'
+INFO: [Synth 8-3886] merging instance 'V_reg[92][1]' (LDC) to 'V_reg[91][2]'
+INFO: [Synth 8-3886] merging instance 'V_reg[78][1]' (LDC) to 'V_reg[80][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[80][1]' (LDC) to 'V_reg[79][2]'
+INFO: [Synth 8-3886] merging instance 'V_reg[88][1]' (LDC) to 'V_reg[87][2]'
+INFO: [Synth 8-3886] merging instance 'V_reg[89][1]' (LDC) to 'V_reg[88][2]'
+INFO: [Synth 8-3886] merging instance 'V_reg[84][1]' (LDC) to 'V_reg[83][2]'
+INFO: [Synth 8-3886] merging instance 'V_reg[86][1]' (LDC) to 'V_reg[85][2]'
+INFO: [Synth 8-3886] merging instance 'V_reg[79][1]' (LDC) to 'V_reg[78][2]'
+INFO: [Synth 8-3886] merging instance 'V_reg[87][1]' (LDC) to 'V_reg[86][2]'
+INFO: [Synth 8-3886] merging instance 'V_reg[95][1]' (LDC) to 'V_reg[94][2]'
+INFO: [Synth 8-3886] merging instance 'V_reg[96][1]' (LDC) to 'V_reg[95][2]'
+INFO: [Synth 8-3886] merging instance 'V_reg[94][1]' (LDC) to 'V_reg[93][2]'
+INFO: [Synth 8-3886] merging instance 'V_reg[81][1]' (LDC) to 'V_reg[80][2]'
+INFO: [Synth 8-3886] merging instance 'V_reg[82][1]' (LDC) to 'V_reg[81][2]'
+INFO: [Synth 8-3886] merging instance 'V_reg[83][1]' (LDC) to 'V_reg[82][2]'
+INFO: [Synth 8-3886] merging instance 'V_reg[85][1]' (LDC) to 'V_reg[84][2]'
+INFO: [Synth 8-3886] merging instance 'V_reg[94][2]' (LDC) to 'V_reg[93][3]'
+INFO: [Synth 8-3886] merging instance 'V_reg[91][2]' (LDC) to 'V_reg[90][3]'
+INFO: [Synth 8-3886] merging instance 'V_reg[90][2]' (LDC) to 'V_reg[89][3]'
+INFO: [Synth 8-3886] merging instance 'V_reg[95][2]' (LDC) to 'V_reg[94][3]'
+INFO: [Synth 8-3886] merging instance 'V_reg[96][2]' (LDC) to 'V_reg[95][3]'
+INFO: [Synth 8-3886] merging instance 'V_reg[88][2]' (LDC) to 'V_reg[87][3]'
+INFO: [Synth 8-3886] merging instance 'V_reg[89][2]' (LDC) to 'V_reg[88][3]'
+INFO: [Synth 8-3886] merging instance 'V_reg[93][2]' (LDC) to 'V_reg[92][3]'
+INFO: [Synth 8-3886] merging instance 'V_reg[92][2]' (LDC) to 'V_reg[91][3]'
+INFO: [Synth 8-3886] merging instance 'V_reg[81][2]' (LDC) to 'V_reg[80][3]'
+INFO: [Synth 8-3886] merging instance 'V_reg[82][2]' (LDC) to 'V_reg[81][3]'
+INFO: [Synth 8-3886] merging instance 'V_reg[83][2]' (LDC) to 'V_reg[82][3]'
+INFO: [Synth 8-3886] merging instance 'V_reg[85][2]' (LDC) to 'V_reg[84][3]'
+INFO: [Synth 8-3886] merging instance 'V_reg[78][2]' (LDC) to 'V_reg[81][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[80][2]' (LDC) to 'V_reg[79][3]'
+INFO: [Synth 8-3886] merging instance 'V_reg[87][2]' (LDC) to 'V_reg[86][3]'
+INFO: [Synth 8-3886] merging instance 'V_reg[86][2]' (LDC) to 'V_reg[85][3]'
+INFO: [Synth 8-3886] merging instance 'V_reg[79][2]' (LDC) to 'V_reg[78][3]'
+INFO: [Synth 8-3886] merging instance 'V_reg[97][2]' (LDC) to 'V_reg[96][3]'
+INFO: [Synth 8-3886] merging instance 'V_reg[84][2]' (LDC) to 'V_reg[83][3]'
+INFO: [Synth 8-3886] merging instance 'V_reg[94][3]' (LDC) to 'V_reg[93][4]'
+INFO: [Synth 8-3886] merging instance 'V_reg[95][3]' (LDC) to 'V_reg[94][4]'
+INFO: [Synth 8-3886] merging instance 'V_reg[97][3]' (LDC) to 'V_reg[96][4]'
+INFO: [Synth 8-3886] merging instance 'V_reg[96][3]' (LDC) to 'V_reg[95][4]'
+INFO: [Synth 8-3886] merging instance 'V_reg[81][3]' (LDC) to 'V_reg[80][4]'
+INFO: [Synth 8-3886] merging instance 'V_reg[82][3]' (LDC) to 'V_reg[81][4]'
+INFO: [Synth 8-3886] merging instance 'V_reg[84][3]' (LDC) to 'V_reg[83][4]'
+INFO: [Synth 8-3886] merging instance 'V_reg[88][3]' (LDC) to 'V_reg[87][4]'
+INFO: [Synth 8-3886] merging instance 'V_reg[89][3]' (LDC) to 'V_reg[88][4]'
+INFO: [Synth 8-3886] merging instance 'V_reg[91][3]' (LDC) to 'V_reg[90][4]'
+INFO: [Synth 8-3886] merging instance 'V_reg[90][3]' (LDC) to 'V_reg[89][4]'
+INFO: [Synth 8-3886] merging instance 'V_reg[78][3]' (LDC) to 'V_reg[82][127]'
+INFO: [Synth 8-3886] merging instance 'V_reg[80][3]' (LDC) to 'V_reg[79][4]'
+INFO: [Synth 8-3886] merging instance 'V_reg[86][3]' (LDC) to 'V_reg[85][4]'
+INFO: [Synth 8-3886] merging instance 'V_reg[87][3]' (LDC) to 'V_reg[86][4]'
+INFO: [Synth 8-3886] merging instance 'V_reg[93][3]' (LDC) to 'V_reg[92][4]'
+INFO: [Synth 8-3886] merging instance 'V_reg[79][3]' (LDC) to 'V_reg[78][4]'
+INFO: [Synth 8-3886] merging instance 'V_reg[83][3]' (LDC) to 'V_reg[82][4]'
+INFO: [Synth 8-3886] merging instance 'V_reg[85][3]' (LDC) to 'V_reg[84][4]'
+INFO: [Synth 8-3886] merging instance 'V_reg[92][3]' (LDC) to 'V_reg[91][4]'
+INFO: [Synth 8-3886] merging instance 'V_reg[86][4]' (LDC) to 'V_reg[85][5]'
+INFO: [Synth 8-3886] merging instance 'V_reg[79][4]' (LDC) to 'V_reg[78][5]'
+INFO: [Synth 8-3886] merging instance 'V_reg[87][4]' (LDC) to 'V_reg[86][5]'
+INFO: [Synth 8-3886] merging instance 'V_reg[95][4]' (LDC) to 'V_reg[94][5]'
+INFO: [Synth 8-3886] merging instance 'V_reg[96][4]' (LDC) to 'V_reg[95][5]'
+INFO: [Synth 8-3886] merging instance 'V_reg[94][4]' (LDC) to 'V_reg[93][5]'
+INFO: [Synth 8-3886] merging instance 'V_reg[81][4]' (LDC) to 'V_reg[80][5]'
+INFO: [Synth 8-3886] merging instance 'V_reg[82][4]' (LDC) to 'V_reg[81][5]'
+INFO: [Synth 8-3886] merging instance 'V_reg[83][4]' (LDC) to 'V_reg[82][5]'
+INFO: [Synth 8-3886] merging instance 'V_reg[85][4]' (LDC) to 'V_reg[84][5]'
+INFO: [Synth 8-3886] merging instance 'V_reg[84][4]' (LDC) to 'V_reg[83][5]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[127]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[126]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[125]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[124]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[123]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[122]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[121]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[120]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[119]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[118]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[117]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[116]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[115]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[114]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[113]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[112]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[111]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[110]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[109]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[108]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[107]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[106]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[105]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[104]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[103]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[102]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[101]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[100]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[99]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[98]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[97]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[96]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[95]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[94]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[93]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[92]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[91]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[90]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[89]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[88]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[87]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[86]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[85]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[84]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[83]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[82]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[81]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[80]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[79]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'A_reg[78]__0/Q' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/VivadoCode/chip_contest/password_expansion/password2/password2.srcs/sources_1/new/top.v:32]
+INFO: [Common 17-14] Message 'Synth 8-6858' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-6858' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:01:08 . Memory (MB): peak = 860.414 ; gain = 528.203
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |top__GB0      |           1|      8606|
+|2     |top__GB1      |           1|      4885|
+|3     |top__GB2      |           1|      6460|
+|4     |top__GB3      |           1|      6332|
+|5     |top__GB4      |           1|      6825|
+|6     |top__GB5      |           1|       536|
++------+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:01:09 . Memory (MB): peak = 860.414 ; gain = 528.203
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |top__GB2      |           1|         1|
+|2     |top__GB5      |           1|         2|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Z_reg[128][127] )
+WARNING: [Synth 8-3332] Sequential element (Z_reg[128][127]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:01:09 . Memory (MB): peak = 860.414 ; gain = 528.203
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:01:09 . Memory (MB): peak = 860.414 ; gain = 528.203
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:01:09 . Memory (MB): peak = 860.414 ; gain = 528.203
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:01:09 . Memory (MB): peak = 860.414 ; gain = 528.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:01:09 . Memory (MB): peak = 860.414 ; gain = 528.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:01:09 . Memory (MB): peak = 860.414 ; gain = 528.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:01:09 . Memory (MB): peak = 860.414 ; gain = 528.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |OBUF  |   128|
+|2     |OBUFT |     2|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   130|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:01:09 . Memory (MB): peak = 860.414 ; gain = 528.203
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 200 critical warnings and 298 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:01:10 . Memory (MB): peak = 860.414 ; gain = 528.203
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:01:10 . Memory (MB): peak = 860.414 ; gain = 528.203
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 860.414 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+119 Infos, 142 Warnings, 200 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:01:14 . Memory (MB): peak = 860.414 ; gain = 541.074
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 860.414 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/VivadoCode/chip_contest/password_expansion/password2/password2.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jul  9 17:06:17 2022...

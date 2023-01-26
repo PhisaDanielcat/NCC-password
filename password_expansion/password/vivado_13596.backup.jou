@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jul  9 10:19:03 2022
+# Process ID: 13596
+# Current directory: D:/VivadoCode/chip_contest/password_expansion/password
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12784 D:\VivadoCode\chip_contest\password_expansion\password\password.xpr
+# Log file: D:/VivadoCode/chip_contest/password_expansion/password/vivado.log
+# Journal file: D:/VivadoCode/chip_contest/password_expansion/password\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/VivadoCode/chip_contest/password_expansion/password/password.xpr
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+create_clock -period 20.000 -name clk_sys -waveform {0.000 10.000} [get_ports clk_sys]
+file mkdir D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/constrs_1/new
+close [ open D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/constrs_1/new/time.xdc w ]
+add_files -fileset constrs_1 D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/constrs_1/new/time.xdc
+set_property target_constrs_file D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/constrs_1/new/time.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_clock_networks -name {network_1}
+report_clock_interaction -delay_type min_max -significant_digits 3 -name timing_2
+table data-draft-node="block" data-draft-type="table" data-size="normal" data-row-style="normal">
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+refresh_design
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1

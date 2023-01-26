@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoCode/chip_contest/password_expansion/passwd/passwd.srcs/sources_1/imports/files/LB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LB_func
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoCode/chip_contest/password_expansion/passwd/passwd.srcs/sources_1/imports/files/S_box.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module S_box
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoCode/chip_contest/password_expansion/passwd/passwd.srcs/sources_1/imports/files/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-3380] identifier 'FKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/passwd/passwd.srcs/sources_1/imports/files/top.v:31]
+WARNING: [VRFC 10-3380] identifier 'FKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/passwd/passwd.srcs/sources_1/imports/files/top.v:32]
+WARNING: [VRFC 10-3380] identifier 'FKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/passwd/passwd.srcs/sources_1/imports/files/top.v:33]
+WARNING: [VRFC 10-3380] identifier 'FKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/passwd/passwd.srcs/sources_1/imports/files/top.v:34]
+WARNING: [VRFC 10-3380] identifier 'CKi' is used before its declaration [D:/VivadoCode/chip_contest/password_expansion/passwd/passwd.srcs/sources_1/imports/files/top.v:43]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoCode/chip_contest/password_expansion/passwd/passwd.srcs/sim_1/imports/files/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb

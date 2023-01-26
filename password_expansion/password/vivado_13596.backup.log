@@ -1,0 +1,107 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jul  9 10:19:03 2022
+# Process ID: 13596
+# Current directory: D:/VivadoCode/chip_contest/password_expansion/password
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12784 D:\VivadoCode\chip_contest\password_expansion\password\password.xpr
+# Log file: D:/VivadoCode/chip_contest/password_expansion/password/vivado.log
+# Journal file: D:/VivadoCode/chip_contest/password_expansion/password\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/VivadoCode/chip_contest/password_expansion/password/password.xpr
+INFO: [Project 1-313] Project file moved from 'D:/vivado_code/chip_contest/password_expansion/password' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+[Sat Jul  9 10:20:38 2022] Launched synth_1...
+Run output will be captured here: D:/VivadoCode/chip_contest/password_expansion/password/password.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-2
+INFO: [Netlist 29-17] Analyzing 646 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1096.363 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1245.258 ; gain = 423.301
+create_clock -period 20.000 -name clk_sys -waveform {0.000 10.000} [get_ports clk_sys]
+file mkdir D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/constrs_1/new
+close [ open D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/constrs_1/new/time.xdc w ]
+add_files -fileset constrs_1 D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/constrs_1/new/time.xdc
+set_property target_constrs_file D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/constrs_1/new/time.xdc [current_fileset -constrset]
+save_constraints -force
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1723.938 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Sat Jul  9 10:22:44 2022] Launched synth_1...
+Run output will be captured here: D:/VivadoCode/chip_contest/password_expansion/password/password.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-2
+INFO: [Netlist 29-17] Analyzing 646 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/constrs_1/new/time.xdc]
+Finished Parsing XDC File [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/constrs_1/new/time.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1786.938 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_clock_networks -name {network_1}
+report_clock_interaction -delay_type min_max -significant_digits 3 -name timing_2
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+table data-draft-node="block" data-draft-type="table" data-size="normal" data-row-style="normal">
+invalid command name "table"
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Sat Jul  9 10:35:48 2022] Launched synth_1...
+Run output will be captured here: D:/VivadoCode/chip_contest/password_expansion/password/password.runs/synth_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 646 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/constrs_1/new/time.xdc]
+Finished Parsing XDC File [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/constrs_1/new/time.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jul  9 11:28:35 2022...

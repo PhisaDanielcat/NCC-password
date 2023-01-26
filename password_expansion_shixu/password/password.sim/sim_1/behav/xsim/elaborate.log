@@ -1,0 +1,11 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto bd557839f2e1457a943c3d2d1c42ae4d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3705] select index 32 into 'CKi' is out of bounds [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:300]
+WARNING: [VRFC 10-3705] select index 36 into 'Ki' is out of bounds [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:301]
+WARNING: [VRFC 10-3705] select index 36 into 'Ki' is out of bounds [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:302]
+WARNING: [VRFC 10-3705] select index 36 into 'Ki' is out of bounds [D:/VivadoCode/chip_contest/password_expansion/password/password.srcs/sources_1/imports/Desktop/top.v:303]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
